@@ -1,0 +1,36 @@
+<!--2일차 실습-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+            실습2회
+    </title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>납품자명 : <input type="text" name="name" ></li>
+                <li>email : <input type="text" name="email" placeholder="anser@naver.com"></li>
+                <li>홈페이지 : <input type="text" name="page" value="http" ></li>
+                <li>지역 : <select name="regin">
+                    <option value="1" selected>서울</option>
+                    <option value="2">부산</option>
+                    <option value="3">대구</option>
+                </select>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>상품명 : <input type="text" name="no" ></li>
+                <li>납품수량 : <input type="number" name="count" placeholder="최소 100"></li>
+                <li>납품 등급 : <input type="range" name="point" min="0" max="100"></li>
+                <li>기타 사항: <textarea rows="5" cols="50"></textarea></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="send message">
+    </form>
+</body>
+</html>
